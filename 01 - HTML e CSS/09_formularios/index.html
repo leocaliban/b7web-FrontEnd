@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Formulários</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <h1>Trabalhando com formulários.</h1>
+
+    <form method="POST">
+        <label for="usuario">Usuário</label>
+        <input type="text" name="usuario" id="usuario" />
+
+        <br />
+        <br />
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" />
+
+        <br />
+        <br />
+
+        <label for="obs">Observações</label>
+        <br />
+
+        <textarea name="observacoes" id="obs" cols="25" rows="5"></textarea>
+        <br />
+        <br />
+        <label for="opcoes">Profissão</label>
+        <select name="profissao" id="opcoes">
+            <option value="1">Professor</option>
+            <option value="2">Padeiro</option>
+            <option value="3">Vendedor</option>
+        </select>
+        <br />
+        <br />
+
+        <label>Sexo:</label>
+        <br />
+        <input type="radio" name="radio" value="M" id="m" /> <label for="m">Masculino</label>
+        <br />
+        <input type="radio" name="radio" value="F" id="f" /> <label for="f">Feminino</label>
+        <br />
+        <br />
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
