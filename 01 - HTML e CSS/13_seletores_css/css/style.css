@@ -1,0 +1,13 @@
+body {
+    background-color: antiquewhite;
+}
+
+p {
+    color: #444343;
+    font-weight: bold;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
