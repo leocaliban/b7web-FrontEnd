@@ -1,0 +1,35 @@
+.div-border {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    float: left;
+}
+
+.div-border-solid {
+    border: 3px solid purple;
+}
+
+.div-border-dotted {
+    border: 3px dotted purple;
+}
+
+.div-border-dashed {
+    border: 3px dashed purple;
+}
+
+.div-border-radious {
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.div-circulo {
+    text-align: center;
+    background-color: purple;
+    border-radius: 200px;
+}
+
+.div-circulo p {
+    margin-top: 130px;
+    color: #ffffff;
+    clear: both;
+}
