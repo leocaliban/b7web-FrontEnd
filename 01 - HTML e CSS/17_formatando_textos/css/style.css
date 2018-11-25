@@ -1,0 +1,27 @@
+.texto-colorir {
+    color: blue;
+}
+
+.texto-size {
+    font-size: 40px;
+}
+
+.texto-family {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.texto-peso {
+    font-weight: bold;
+}
+
+.texto-alinhamento {
+    text-align: center;
+}
+
+.texto-transform {
+    text-transform: uppercase;
+}
+
+.texto-decoration {
+    text-decoration: underline;
+}
