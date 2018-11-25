@@ -1,0 +1,26 @@
+.box {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+.box1 {
+    background-color: rgb(160, 100, 216);
+    display: block;
+}
+
+.box2 {
+    background-color: rgb(100, 146, 216);
+}
+
+/* Display NONE oculta a exibção do elemento, porém, o elemento ainda existe */
+
+.box3 {
+    background-color: rgb(73, 167, 143);
+    display: none;
+}
+
+.box4 {
+    background-color: rgb(216, 175, 100);
+}
