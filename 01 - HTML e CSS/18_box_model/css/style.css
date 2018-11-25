@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.content {
+    width: 700px;
+    height: 500px;
+    background-color: #cccccc;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+}
