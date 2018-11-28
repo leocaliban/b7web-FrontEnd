@@ -48,6 +48,12 @@ body {
     transition: all 0.5s linear;
 }
 
+.reset-a a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s linear;
+}
+
 .topo-content-left li a:active {
     color: rgb(243, 91, 91);
 }
@@ -176,7 +182,120 @@ body {
     padding-left: 10px;
 }
 
-.submenu-item:hover{
+.submenu-item:hover {
     background-color: #eb5d5d;
+}
+
+.ultimas-noticias {
+    height: 40px;
+}
+
+.ultimas-noticias-content-area {
+    width: 100%;
+    max-width: 1040px;
+    height: 40;
+    margin: auto;
+}
+
+.ultimas-noticias-content {
+    height: 28px;
+    background-color: #ffffff;
+    border: solid 1px #cccccc;
+    margin-top: 10px;
+}
+
+.ultimas-noticias-titulo {
+    background-color: #be2e2e;
+    height: 28px;
+    line-height: 28px;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+.ultimas-noticias-texto {
+    color: #353434;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    padding-left: 6px;
+}
+
+.container-content-area {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+}
+
+.main {
+    width: 753px;
+    min-height: 200px;
+    float: left;
+}
+
+.side {
+    width: 275px;
+    min-height: 200px;
+    float: right;
+    margin-left: 12px;
+}
+
+.widget {
+    background-color: #ffffff;
+    border: solid 1px #cccccc;
+    margin-bottom: 10px;
+}
+
+.widget-titulo {
+    height: 30px;
+    border-bottom: solid 1px #cccccc;
+    background-color: #dddddd;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.widget-content{
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.widget-img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 4px;
+    border-radius: 5px;
+}
+
+.publicidade-side{
+    width: 273px;
+    height: 272px;
+    background-image: url("../images/ads-saude.jpeg");
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+.facebook-side{
+    padding: 0;
+}
+
+.noticia-item{
+    font-size: 14px;
+    margin: 0 10px;
+    padding: 10px 0px;
+    text-align: left;
+    border-bottom: solid 1px #cccccc;
+}
+
+.noticia-item a {
+    text-decoration: none;
+    color: #555454;
+}
+
+.noticia-item a:hover {
+    color: #222222;
 }
 
