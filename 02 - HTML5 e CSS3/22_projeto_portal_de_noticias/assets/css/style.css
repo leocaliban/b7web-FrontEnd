@@ -231,7 +231,6 @@ body {
 
 .main {
     width: 753px;
-    min-height: 200px;
     float: left;
 }
 
@@ -258,7 +257,7 @@ body {
     text-transform: uppercase;
 }
 
-.widget-content{
+.widget-content {
     text-align: center;
     padding: 5px 0px;
 }
@@ -270,7 +269,7 @@ body {
     border-radius: 5px;
 }
 
-.publicidade-side{
+.publicidade-side {
     width: 273px;
     height: 272px;
     background-image: url("../images/ads-saude.jpeg");
@@ -278,11 +277,11 @@ body {
     padding: 0px;
 }
 
-.facebook-side{
+.facebook-side {
     padding: 0;
 }
 
-.noticia-item{
+.noticia-item {
     font-size: 14px;
     margin: 0 10px;
     padding: 10px 0px;
@@ -299,3 +298,75 @@ body {
     color: #222222;
 }
 
+.slide {
+    height: 335px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slide-seletor {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+}
+
+.bola {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.slide-area {
+    width: 100000px;
+    height: 335px;
+    transition: all 1s;
+}
+
+.slide-content {
+    height: 335px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide1 {
+    background-image: url('../images/medicos.jpg');
+}
+
+.slide2 {
+    background-image: url('../images/livros.jpg');
+}
+
+.slide3 {
+    background-image: url('../images/acidente.jpg');
+}
+
+.slide4 {
+    background-image: url('../images/doce.jpg');
+}
+
+.slide-info {
+    height: 70px;
+    background-image: url('../images/bg.png');
+    background-size: 70px;
+    margin-top: 265px;
+}
+
+.slide-info-titulo {
+    font-size: 23px;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.slide-info-subtitulo {
+    font-size: 13px;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
