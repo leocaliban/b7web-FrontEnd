@@ -1,0 +1,505 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.topo {
+    height: 40px;
+    background-color: #4d4b4b;
+}
+
+.topo-content-area {
+    width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;
+}
+
+.topo-content-left {
+    width: 50%;
+    height: 40px;
+    float: left;
+}
+
+.topo-content-right {
+    width: 50%;
+    height: 38px;
+    float: right;
+    margin-top: 2px;
+}
+
+.reset-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topo-content-left li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px 8px;
+}
+
+.reset-a li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s linear;
+}
+
+.reset-a a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s linear;
+}
+
+.topo-content-left li a:active {
+    color: rgb(243, 91, 91);
+}
+
+.topo-content-left li a:hover {
+    color: #dbee88;
+    text-decoration: underline;
+}
+
+.topo-img {
+    width: 35px;
+    height: 35px;
+    margin: 0px 4px;
+    border-radius: 5px;
+}
+
+.topo-buscar {
+    width: 135px;
+    height: 35;
+    outline: 0;
+    /* Tirar o efeito do focus no input */
+}
+
+.topo-content-right a, .topo-content-right input {
+    float: right;
+}
+
+.topo-search {
+    width: 25px;
+    height: 25px;
+    background-color: #d13030;
+    padding: 5px;
+    margin-left: 3px;
+    border-radius: 5px;
+}
+
+.topo-logo {
+    height: 95px;
+    color: #000000;
+}
+
+.topo-logo-content-area {
+    width: 100%;
+    max-width: 1040px;
+    height: 95px;
+    margin: auto;
+}
+
+.logo {
+    width: 230px;
+    height: 82px;
+    float: left;
+    margin-top: 13px;
+}
+
+.logo img {
+    width: 230px;
+}
+
+.topo-logo .banner {
+    width: 680px;
+    height: 80px;
+    float: right;
+    margin-top: 7px;
+    background-image: url("../images/publicidade.png");
+}
+
+.banner p {
+    padding: 3px;
+    text-align: end;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: default;
+}
+
+.pub {
+    margin-top: 2px;
+    margin-right: 2px;
+    float: right;
+    width: 89px;
+    height: 20px;
+    background-color: rgb(243, 178, 38);
+    border-radius: 0px 0px 0px 10px;
+}
+
+.menu {
+    height: 40px;
+    background-color: #d13030;
+}
+
+.menu-content-area {
+    width: 100%;
+    max-width: 1040px;
+    height: 40;
+    margin: auto;
+}
+
+.menu li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 8px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.arrow {
+    width: 10px
+}
+
+.submenu {
+    width: 150px;
+    background-color: #be2e2e;
+    position: absolute;
+    display: none;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.submenu-item {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.submenu-item:hover {
+    background-color: #eb5d5d;
+}
+
+.ultimas-noticias {
+    height: 40px;
+}
+
+.ultimas-noticias-content-area {
+    width: 100%;
+    max-width: 1040px;
+    height: 40;
+    margin: auto;
+}
+
+.ultimas-noticias-content {
+    height: 28px;
+    background-color: #ffffff;
+    border: solid 1px #cccccc;
+    margin-top: 10px;
+}
+
+.ultimas-noticias-titulo {
+    background-color: #be2e2e;
+    height: 28px;
+    line-height: 28px;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+.ultimas-noticias-texto {
+    color: #353434;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    padding-left: 6px;
+}
+
+.container-content-area {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+}
+
+.main {
+    width: 753px;
+    float: left;
+}
+
+.side {
+    width: 275px;
+    min-height: 200px;
+    float: right;
+    margin-left: 12px;
+}
+
+.widget {
+    background-color: #ffffff;
+    border: solid 1px #cccccc;
+    margin-bottom: 10px;
+}
+
+.widget-titulo {
+    height: 30px;
+    border-bottom: solid 1px #cccccc;
+    background-color: #dddddd;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.widget-content {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.widget-img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 4px;
+    border-radius: 5px;
+}
+
+.publicidade-side {
+    width: 273px;
+    height: 272px;
+    background-image: url("../images/ads-saude.jpeg");
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+.facebook-side {
+    padding: 0;
+}
+
+.noticia-item {
+    font-size: 14px;
+    margin: 0 10px;
+    padding: 10px 0px;
+    text-align: left;
+    border-bottom: solid 1px #cccccc;
+}
+
+.noticia-item a {
+    text-decoration: none;
+    color: #555454;
+}
+
+.noticia-item a:hover {
+    color: #222222;
+}
+
+.slide {
+    height: 335px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slide-seletor {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+}
+
+.bola {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.slide-area {
+    width: 100000px;
+    height: 335px;
+    transition: all 1s;
+}
+
+.slide-content {
+    height: 335px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide1 {
+    background-image: url('../images/medicos.jpg');
+}
+
+.slide2 {
+    background-image: url('../images/livros.jpg');
+}
+
+.slide3 {
+    background-image: url('../images/acidente.jpg');
+}
+
+.slide4 {
+    background-image: url('../images/doce.jpg');
+}
+
+.slide-info {
+    height: 70px;
+    background-image: url('../images/bg.png');
+    background-size: 70px;
+    margin-top: 265px;
+}
+
+.slide-info-titulo {
+    font-size: 23px;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.slide-info-subtitulo {
+    font-size: 13px;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.noticia-content {
+    clear: both;
+}
+
+.noticia-area-1 {
+    width: 430px;
+    height: 420px;
+    float: left;
+}
+
+.noticia-area-2 {
+    width: 320px;
+    height: 420px;
+    float: left;
+}
+
+.item-noticia {
+    text-align: left;
+    height: 88px;
+    margin: 7px 0px;
+}
+
+.noticia-foto {
+    width: 80px;
+    height: 80px;
+    border: solid 1px #cccccc;
+    padding: 3px;
+    float: left;
+}
+
+.noticia-foto img {
+    width: 80px;
+    height: 80px;
+}
+
+.noticia-titulo {
+    margin-left: 6px;
+    font-size: 16px;
+    float: left;
+    width: 226px;
+}
+
+.noticia-subtitulo {
+    font-size: 12px;
+    margin-left: 6px;
+    width: 226px;
+    color: #999999;
+    float: left;
+}
+
+.noticia-big {
+    margin-left: 10px;
+}
+
+.noticia-big .noticia-video {
+    width: 384px;
+    height: 222px;
+    border: solid 1px #cccccc;
+    padding: 3px;
+}
+
+.noticia-big .noticia-video video {
+    width: 384px;
+    height: 222px;
+}
+
+.noticia-big .noticia-titulo {
+    font-size: 27px;
+    width: 384px;
+}
+
+.noticia-big .noticia-subtitulo {
+    width: 384px;
+}
+
+.noticia-big .noticia-foto {
+    width: 384px;
+    height: 222px;
+    border: solid 1px #cccccc;
+    padding: 3px;
+}
+
+.noticia-big .noticia-foto img {
+    width: 384px;
+    height: 222px;
+}
+
+@media only screen and (max-width:1057px) {
+    .topo-content-area, .topo-logo-content-area, .menu-content-area, .ultimas-noticias-content-area, .container-content-area {
+        max-width: 890px;
+    }
+    .logo {
+        width: 198px;
+    }
+    .logo img {
+        width: 198px;
+    }
+    .topo-logo .banner {
+        width: 585px;
+        background-size: 585px;
+        background-repeat: no-repeat;
+    }
+    .main {
+        width: 603px;
+    }
+    .noticia-area-1 {
+        width: 278px;
+    }
+    .noticia-big .noticia-video {
+        width: 250px;
+        height: 142px;
+    }
+    .noticia-big .noticia-video video {
+        width: 250px;
+        height: 142px;
+    }
+    .noticia-big .noticia-titulo {
+        font-size: 24px;
+        width: 250px;
+    }
+    .noticia-big .noticia-subtitulo {
+        width: 280px;
+    }
+    .noticia-big .noticia-foto img {
+        width: 250px;
+        height: 222px;
+    }
+    .noticia-big .noticia-foto {
+        width: 250px;
+        height: 222px;
+    }
+}
