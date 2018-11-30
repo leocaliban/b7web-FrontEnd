@@ -1,7 +1,7 @@
 var slideItem = 0;
 window.onload = function () {
     document.getElementById(slideItem).style.backgroundColor = "#d13030";
-    setInterval(passarSlide, 6000);
+    setInterval(passarSlide, 10000);
 
     var slideWidth = document.getElementById("slide").offsetWidth;
     var objetos = document.getElementsByClassName("slide-content");
