@@ -41,5 +41,17 @@ function mudarSlide(posicao) {
     document.getElementsByClassName("slide-area")[0].style.marginLeft = "-" + (slideWidth * slideItem);
 
     document.getElementById(slideItem).style.backgroundColor = "#d13030";
-
 }
+
+function toggleMenu() {
+    var navMenu = document.getElementById('nav-menu');
+
+    if (navMenu.style.display == 'none' || navMenu.style.display == '') {
+        navMenu.style.display = 'block';
+    }
+    else {
+        navMenu.style.display = 'none';
+    }
+}
+
+
