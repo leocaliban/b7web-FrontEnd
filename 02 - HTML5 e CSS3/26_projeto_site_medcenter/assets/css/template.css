@@ -49,3 +49,10 @@ nav .active a, nav a:hover {
     background-color: #39aae1;
     color: #ffffff;
 }
+
+#banner {
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
