@@ -200,3 +200,59 @@ nav .active a, nav a:hover {
 .widget-titulo:hover .widget-titulo-barra {
     width: 50%;
 }
+
+article a {
+    text-decoration: none;
+}
+
+article .noticia-status {
+    display: flex;
+}
+
+article .noticia-status-data {
+    background-color: #2b4c99;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .noticia-status-comentarios {
+    background-color: #39aae1;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .noticia-imagem {
+    margin-top: 30px;
+}
+
+article .noticia-imagem img {
+    width: 100%;
+    height: auto;
+}
+
+article .noticia-titulo {
+    margin: 25px 0px;
+    color: #000000;
+    font-size: 23px;
+}
+
+article .noticia-descricao {
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    margin-right: 20px;
+    flex: 1;
+    min-width: 300px;
+}
