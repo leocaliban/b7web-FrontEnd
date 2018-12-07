@@ -117,18 +117,18 @@ nav .active a, nav a:hover {
     background-color: #2b4c99;
 }
 
-.banner-titulo{
+.banner-titulo {
     font-size: 23px;
 }
 
-.banner-descricao{
+.banner-descricao {
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 6px;
 }
 
-.banner-options a{
+.banner-options a {
     display: inline-block;
     border: 1px solid #ffffff;
     padding: 6px;
@@ -138,7 +138,29 @@ nav .active a, nav a:hover {
     transition: all 0.3s linear;
 }
 
-.banner-options a:hover{
-    background-color:#ffffff;
-   color: #39aae1;
+.banner-options a:hover {
+    background-color: #ffffff;
+    color: #39aae1;
+}
+
+.container-agenda{
+    margin-top: 12px;
+}
+
+.container-agenda-row{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #485cb4;
+    font-size: 15px;
+    padding: 14px 12px 14px 12px;
+}
+
+.dia-semana {
+    display: flex;
+    align-items: center;
+}
+
+.hora {
+    display: flex;
+    align-items: center;
 }
