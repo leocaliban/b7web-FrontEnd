@@ -201,12 +201,88 @@ nav .active a, nav a:hover {
     width: 50%;
 }
 
+.departamentos img {
+    width: 155px;
+    height: 155px;
+}
+
+.departamentos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+aside .widget-conteudo-texto {
+    color: #666666;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #cccccc;
+}
+
+aside .widget-conteudo-icon {
+    display: inline-block;
+    height: 29px;
+    width: 29px;
+    transition: all 0.1s linear;
+}
+
+aside .icon-phone {
+    background-image: url("../images/phone.png");
+}
+
+aside .icon-mail {
+    background-image: url("../images/mail.png");
+}
+
+aside .icon-form {
+    background-image: url("../images/form.png");
+}
+
+aside .widget-conteudo-row:hover .widget-conteudo-icon{
+    background-position: 0px -29px;
+}
+
+aside .widget-conteudo-contato-texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0px 24px 15px;
+}
+
+aside .widget-conteudo-row{
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #cccccc;
+    color: #666666;
+    font-size: 15px;
+}
+
+aside .widget-conteudo-row span{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+aside .widget-conteudo-row a{
+    margin-left: 5px;
+    font-weight: bold;
+    border-bottom: 1px dotted #cccccc;
+    text-decoration: none;
+}
+
 article a {
     text-decoration: none;
 }
 
 article .noticia-status {
     display: flex;
+}
+
+.arrow {
+    background: url("../images/arrow.png");
+    height: 5px;
+    width: 5px;
 }
 
 article .noticia-status-data {
@@ -225,7 +301,7 @@ article .noticia-status-comentarios {
 }
 
 article .noticia-imagem {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 article .noticia-imagem img {
@@ -246,12 +322,12 @@ article .noticia-descricao {
     margin-bottom: 30px;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
 }
 
-article{
+article {
     margin-right: 20px;
     flex: 1;
     min-width: 300px;
