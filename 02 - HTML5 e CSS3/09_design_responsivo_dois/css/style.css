@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+}
+
+p {
+    padding: 10px;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.topo {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: rgb(219, 112, 12);
+    text-align: center;
+    color: #ffffff;
+}
+
+.cidade {
+    width: 25%;
+    float: left;
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background-color: rgb(150, 72, 0);
+    float: left;
+    color: #ffffff;
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+    .cidade {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .cidade {
+        width: 100%;
+    }
+}

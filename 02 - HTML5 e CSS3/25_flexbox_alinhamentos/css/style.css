@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    background-color: rgb(182, 189, 196);
+    flex-wrap: wrap;
+    /* Abreviação de direção e compactação 
+        flex-flow: row wrap;
+    */
+}
+
+.container div {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.container2 {
+    display: flex;
+    background-color: rgb(182, 189, 196);
+    /*justify-content
+        faz o alinhamento na direção de exibção do flex
+    */
+    justify-content: center;
+}
+
+.container2 div {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.box1 {
+    background-color: rgb(46, 139, 139);
+}
+
+.box2 {
+    background-color: rgb(187, 178, 57);
+}
+
+.box3 {
+    background-color: rgb(101, 106, 177);
+}
+
+.box4 {
+    background-color: rgb(73, 167, 115);
+}
+
+.box5 {
+    background-color: rgb(223, 233, 81);
+}
+
+.box6 {
+    background-color: rgb(167, 73, 120);
+}
+
+.box7 {
+    background-color: rgb(179, 78, 78);
+}
+
+.box8 {
+    background-color: rgb(204, 133, 92);
+}
+
+.box9 {
+    background-color: rgb(64, 148, 187);
+}
+
+.box10 {
+    background-color: rgb(150, 212, 134);
+}

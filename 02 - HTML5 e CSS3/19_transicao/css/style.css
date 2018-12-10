@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+.quadro {
+    background: rgb(52, 199, 108);
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transition: all 0.5s linear;
+    /* - ALL define que para toda mudança de comportamento que ocorrer nesse elemento, a transição será ativada
+       - duração da transição
+       - LINEAR a velocidade da transição não possui alteração
+    */
+}
+
+.quadro:hover {
+    width: 300;
+    background-color: rebeccapurple;
+    border-radius: 100px 20px 100px 20px;
+}
+
+h1{
+    transition: all 0.5s linear;
+}
+
+h1:hover{
+    padding-left: 50px;
+}

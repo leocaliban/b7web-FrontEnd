@@ -1,0 +1,477 @@
+<html>
+
+<head>
+    <title>CIDADE 24H</title>
+
+    <meta charset="utf-8" />
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no" />
+
+    <meta property="og:url" content="https://nazza-test.000webhostapp.com/22_projeto_portal_de_noticias/projeto-dois.html" />
+    <!-- Tipo do site - mais tipos em :https://developers.facebook.com/docs/reference/opengraph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CIDADE 24H" />
+    <meta property="og:description" content="Confira as principais notícias do dia!" />
+    <meta property="og:image" content="https://i1.wp.com/financialhorse.com/wp-content/uploads/2018/06/news-1.jpg?resize=696%2C377&ssl=1" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+</head>
+
+<body>
+
+    <div class="topo">
+        <div class="topo-content-area">
+            <div class="topo-content-left reset-a">
+                <ul class="reset-ul">
+                    <li>
+                        <a href="">Início</a>
+                    </li>
+                    <li>
+                        <a href="">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="">Anuncie Aqui</a>
+                    </li>
+                    <li>
+                        <a href="">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="topo-content-right">
+                <input class="topo-search" type="image" name="buscar" src="assets/images/search.png" />
+                <input class="topo-buscar" type="text" name="buscar" placeholder="Buscar..." />
+
+                <a href="https://www.youtube.com/user/leonardocaliban" target="_blank">
+                    <img class="topo-img" src="assets/images/youtube.png" alt="" />
+                </a>
+                <a href="https://twitter.com/Leocaliban" target="_blank">
+                    <img class="topo-img" src="assets/images/tw.png" alt="" />
+                </a>
+                <a href="https://www.facebook.com/leocaliban0" target="_blank">
+                    <img class="topo-img" src="assets/images/face.png" alt="" />
+                </a>
+                <a href="https://plus.google.com/u/0/+leonardocaliban" target="_blank">
+                    <img class="topo-img" src="assets/images/g+.png" alt="" />
+                </a>
+                <a href="">
+                    <img id="rss" class="topo-img" src="assets/images/rss.png" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="topo-logo">
+        <div class="topo-logo-content-area">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Logo Cidade 24h" title="Imagem em https://cidade24h.com/portal/">
+            </div>
+            <div class="banner">
+                <div class="pub">
+                    <p>PUBLICIDADE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu reset-a">
+        <div class="menu-content-area">
+            <img class="menu-icon" src="assets/images/menu.png" alt="" onclick="toggleMenu()">
+            <ul class="reset-ul" id="nav-menu">
+                <li>
+                    <a href="">Início</a>
+                </li>
+                <li>
+                    <a href="">Economia</a>
+                </li>
+                <li>
+                    <a href="">Entretenimento</a>
+                    <img class="arrow" src="assets/images/down.png" alt="">
+                    <div class="submenu">
+                        <a href="">
+                            <div class="submenu-item">Video Game</div>
+                            <div class="submenu-item">Filmes</div>
+                            <div class="submenu-item">Séries</div>
+                            <div class="submenu-item">Apostas</div>
+                            <div class="submenu-item">Redes Sociais</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Esportes</a>
+                    <img class="arrow" src="assets/images/down.png" alt="">
+                    <div class="submenu">
+                        <a href="">
+                            <div class="submenu-item">Futebol</div>
+                            <div class="submenu-item">Campeonato Brasileiro</div>
+                            <div class="submenu-item">Basquete</div>
+                            <div class="submenu-item">Vôlei</div>
+                            <div class="submenu-item">F1</div>
+                            <div class="submenu-item">League Of Legends</div>
+                            <div class="submenu-item">Seleção Brasileira</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Geral</a>
+                </li>
+                <li>
+                    <a href="">Notícias</a>
+                    <img class="arrow" src="assets/images/down.png" alt="">
+                    <div class="submenu">
+                        <a href="">
+                            <div class="submenu-item">Esterior</div>
+                            <div class="submenu-item">Guerra</div>
+                            <div class="submenu-item">Saúde</div>
+                            <div class="submenu-item">Alimentação</div>
+                            <div class="submenu-item">Cotação Financeira</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Polícia</a>
+                </li>
+                <li>
+                    <a href="">Vídeos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="ultimas-noticias">
+        <div class="ultimas-noticias-content-area">
+            <div class="ultimas-noticias-content">
+                <div class="ultimas-noticias-titulo">
+                    últimas notícias
+                </div>
+                <div class="ultimas-noticias-texto">
+                    Eduardo Bolsonaro fala de mudança da embaixada brasileira em Israel com genro de Trump.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-content-area">
+
+            <div class="main">
+                <div class="slide" id="slide">
+                    <div class="slide-seletor">
+                        <div id="0" class="bola" onclick="mudarSlide(0)"></div>
+                        <div id="1" class="bola" onclick="mudarSlide(1)"></div>
+                        <div id="2" class="bola" onclick="mudarSlide(2)"></div>
+                        <div id="3" class="bola" onclick="mudarSlide(3)"></div>
+                    </div>
+
+                    <div class="slide-area">
+                        <a href="" target="_blank">
+                            <div class="slide-content slide1">
+                                <div class="slide-info">
+                                    <div class="slide-info-titulo">
+                                        Cubanos são aprovados no revalida
+                                    </div>
+                                    <div class="slide-info-subtitulo">
+                                        Após novos termos propostos pelo presidente Jair Bolsonaro, 80% dos cubanos
+                                        obtveram nota máxima no revalida e continuarão suas atividades no Brasil.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" target="_blank">
+                            <div class="slide-content slide2">
+                                <div class="slide-info">
+                                    <div class="slide-info-titulo">
+                                        Livros de 10 mil anos foram encontrados
+                                    </div>
+                                    <div class="slide-info-subtitulo">
+                                        Dois jovens no Canadá encontraram uma biblioteca com livros de 10 mil anos.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" target="_blank">
+                            <div class="slide-content slide3">
+                                <div class="slide-info">
+                                    <div class="slide-info-titulo">
+                                        Vingança, homem tenta matar pedreiro
+                                    </div>
+                                    <div class="slide-info-subtitulo">
+                                        Após serviço mal feito, um homem tenta destruir o carro do pedreito com seu
+                                        carro
+                                        Suzuki.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" target="_blank">
+                            <div class="slide-content slide4">
+                                <div class="slide-info">
+                                    <div class="slide-info-titulo">
+                                        Pé de Baiano
+                                    </div>
+                                    <div class="slide-info-subtitulo">
+                                        A nova sensação do Brasil, doce brasileiro já faz parte de 40% do PIB.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="widget-titulo">
+                        NOTÍCIAS
+                    </div>
+                    <div class="widget-content">
+                        <div class="noticia-area-1">
+
+                            <div class="item-noticia noticia-big">
+                                <div class="noticia-video">
+                                    <video controls>
+                                        <source src="assets/videos/conhece.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                                <div class="noticia-titulo">
+                                    Conhece? Natal Zuera cobrindo resenha nas quebradas
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    Natal da Zuera azila em mais uma festa nas quebradas das catabaga e os galeroso.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="noticia-area-2">
+
+                            <div class="item-noticia">
+                                <div class="noticia-foto">
+                                    <img src="assets/images/jogador.jpg" alt="">
+                                </div>
+                                <div class="noticia-titulo">
+                                    Campeonato Brasileiro já têm o craque do ano!
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    Fenômeno fez 500 gols na temporada e está concorrendo ao melhor do ano.
+                                </div>
+                            </div>
+
+                            <div class="item-noticia">
+                                <div class="noticia-foto">
+                                    <img src="assets/images/comida.jpg" alt="">
+                                </div>
+                                <div class="noticia-titulo">
+                                    Chefs de cozinha ganham 50 mil reais por mês em Dubai.
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    Cozinheiros do mundo inteiro tentam invadir o país para exercer a profissão.
+                                </div>
+                            </div>
+
+                            <div class="item-noticia">
+                                <div class="noticia-foto">
+                                    <img src="assets/images/jogo.png" alt="">
+                                </div>
+                                <div class="noticia-titulo">
+                                    Darius: Após 9 anos o campeão se despede.
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    Riot pede desculpas e doa 50 mil RP para os jogadores ofendidos.
+                                </div>
+                            </div>
+
+                            <div class="item-noticia">
+                                <div class="noticia-foto">
+                                    <img src="assets/images/sumiu.jpg" alt="">
+                                </div>
+                                <div class="noticia-titulo">
+                                    Mulher desaparcida há 30 anos
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    Familiares pedem ajuda para encontrar Fátima.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="noticia-content">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="widget-titulo">
+                        VIDEO GAME
+                    </div>
+                    <div class="widget-content">
+                        <div class="noticia-area-1">
+
+                            <div class="item-noticia noticia-big">
+                                <div class="noticia-foto">
+                                    <img src="assets/images/bgs.png" alt="">
+                                </div>
+                                <div class="noticia-titulo">
+                                    BGS 2019 em João Pessoa-PB
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    A maior feira de games da América Latina, com as novidades e lançamentos do mundo
+                                    dos games mostrando as novas tecnologias agora será realizada na Paraíba.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="noticia-area-2">
+
+                            <div class="item-noticia">
+                                <div class="noticia-foto">
+                                    <img src="assets/images/jogo1.jpg" alt="">
+                                </div>
+                                <div class="noticia-titulo">
+                                    Middle-Earth: Shadow of War para os consoles
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    Shadow of War, um game de ação e aventura com boa dinâmica e gráficos excelentes.
+                                </div>
+                            </div>
+
+                            <div class="item-noticia">
+                                <div class="noticia-foto">
+                                    <img src="assets/images/jogo2.png" alt="">
+                                </div>
+                                <div class="noticia-titulo">
+                                    For Honor
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    For Honor apresenta 3 classes distintas de heróis que estão em guerra há mil anos,
+                                    mas agora precisam se unir para enfrentar um inimigo em comum.
+                                </div>
+                            </div>
+
+                            <div class="item-noticia">
+                                <div class="noticia-foto">
+                                    <img src="assets/images/jogo3.jpg" alt="">
+                                </div>
+                                <div class="noticia-titulo">
+                                    Far Cry 5
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    Aqui, você assume o controle de um xerife que tem a difícil missão de por um fim às
+                                    atividades de um culto de fanáticos religiosos que está aterrorizando os cidadãos.
+                                </div>
+                            </div>
+
+                            <div class="item-noticia">
+                                <div class="noticia-foto">
+                                    <img src="assets/images/jogo4.jpg" alt="">
+                                </div>
+                                <div class="noticia-titulo">
+                                    God of War
+                                </div>
+                                <div class="noticia-subtitulo">
+                                    O melhor game de ação e aventura do momento é nada menos do que God of War, o mais
+                                    novo título da série.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="noticia-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side">
+                <div class="widget">
+                    <div class="widget-titulo">
+                        Redes Sociais
+                    </div>
+                    <div class="widget-content reset-a">
+                        <a href="https://www.youtube.com/user/leonardocaliban" target="blank">
+                            <img class="widget-img" src="assets/images/youtube.png" alt="" />
+                        </a>
+                        <a href="https://twitter.com/Leocaliban" target="_blank">
+                            <img class="widget-img" src="assets/images/tw.png" alt="" />
+                        </a>
+                        <a href="https://www.facebook.com/leocaliban0" target="_blank">
+                            <img class="widget-img" src="assets/images/face.png" alt="" />
+                        </a>
+                        <a href="https://plus.google.com/u/0/+leonardocaliban" target="_blank">
+                            <img class="widget-img" src="assets/images/g+.png" alt="" />
+                        </a>
+                        <a href="">
+                            <img class="widget-img" src="assets/images/rss.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="widget-titulo">
+                        Últimas notícias
+                    </div>
+                    <div class="widget-content">
+                        <div class="noticia-item">
+                            <a href="">
+                                "Toda a população brasileira vai pagar", diz Bolsonaro sobre reajuste aos ministros do
+                                STF
+                            </a>
+                        </div>
+                        <div class="noticia-item">
+                            <a href="">
+                                Argentina e Rússia devem assinar acordo de parceria para energia nuclear, diz
+                                embaixador
+                            </a>
+                        </div>
+                        <div class="noticia-item">
+                            <a href="">
+                                Por causa de videogame roubado, dupla mata ex-colega de casa a facadas nos EUA
+                            </a>
+                        </div>
+                        <div class="noticia-item">
+                            <a href="">
+                                Brasil desiste de sediar Conferência do Clima em 2019
+                            </a>
+                        </div>
+                        <div class="noticia-item">
+                            <a href="">
+                                Eleito o melhor do mundo, Modric será o vencedor da Bola de Ouro na próxima segunda,
+                                diz
+                                rádio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="widget-titulo">
+                        PUBLICIDADE
+                    </div>
+                    <div class="widget-content publicidade-side">
+
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="widget-titulo">
+                        Encontre-nos no facebook
+                    </div>
+                    <div class="widget-content facebook-side">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbf4ps3%2F&tabs&width=273&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="273" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true" allow="encrypted-media">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+.topo {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: brown;
+}
+
+.menu {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: rgb(142, 165, 42);
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    margin: auto;
+    background-color: rgb(42, 126, 165);
+}
+
+.footer {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+    background-color: rgb(21, 19, 151);
+}
+
+h1 {
+    margin: 0;
+}
+
+@media only screen and (max-width:500px) {
+    .topo {
+        height: 200px;
+    }
+    .logo {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+}

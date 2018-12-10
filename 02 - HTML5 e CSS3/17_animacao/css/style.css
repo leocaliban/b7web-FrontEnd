@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+.animacao {
+    background: blueviolet;
+    width: 200px;
+    height: 200px;
+    animation-name: quadro-animado;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+h1{
+    float: right;
+}
+
+@keyframes quadro-animado {
+    0% {
+        background-color: blueviolet;
+        border-radius: 100px 0px 0px 0px;
+        top: 0;
+        left: 0;
+    }
+    25% {
+        background-color: black;
+        border-radius: 0px 100px 0px 0px;
+        top: 0;
+        left: 200;
+    }
+    50% {
+        background-color: brown;
+        border-radius: 0px 0px 100px 0px;
+        top: 200;
+        left: 200;
+    }
+    75% {
+        background-color: green;
+        border-radius: 0px 0px 0px 100px;
+        top: 200;
+        left: 0;
+    }
+    100% {
+        background-color: blueviolet;
+        border-radius: 100px 0px 0px 0px;
+        top: 0;
+        left: 0;
+    }
+}
