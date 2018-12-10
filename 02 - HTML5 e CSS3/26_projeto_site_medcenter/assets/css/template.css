@@ -79,7 +79,7 @@ nav .active a, nav a:hover {
     text-shadow: 0px 1px 0px #555555;
     margin: 0;
     padding: 0;
-    max-width: 450px;
+    max-width: 350px;
     cursor: default;
 }
 
@@ -431,6 +431,18 @@ footer .widget-titulo-texto {
     padding-left: 5px;
 }
 
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px 40px 0px;
+}
+
+.menu-mobile-row {
+    height: 3px;
+    background-color: #39aae1;
+}
+
 @media (max-width:861px) {
     .banner-titulo {
         font-size: 23px;
@@ -459,18 +471,6 @@ footer .widget-titulo-texto {
     .container-agenda-row {
         font-size: 13px;
     }
-}
-
-.menu-mobile{
-    display: none;
-    width: 40px;
-    height: 40px;
-    margin: 40px 20px 40px 0px;
-}
-
-.menu-mobile-row{
-    height: 3px;
-    background-color: #39aae1;
 }
 
 @media (max-width:708px) {
@@ -510,26 +510,26 @@ footer .widget-titulo-texto {
         justify-content: space-around
     }
     #banner {
-        height: 120%;
+        height: 110%;
     }
-
-    header .container{
+    header .container {
         flex-direction: row;
     }
-
-    nav ul{
+    nav ul {
         flex-direction: column;
         display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
     }
-
-    header{
+    header {
         height: auto;
     }
-    .logo{
+    .logo {
         padding-left: 20px;
     }
-
-    .menu-mobile{
+    .menu-mobile {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
