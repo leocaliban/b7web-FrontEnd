@@ -16,3 +16,9 @@
 
         git config user.name
         git config user.email
+
+## Iniciando um repositório GIT
+
+* Executar seguinte comando no repositório que será versionado.
+
+        git init
