@@ -69,6 +69,25 @@ O comando ```git status``` exibe as modificações realizadas.
 
 * Executar ```git branch``` para visualizar todos os branchs.
 
+### Visualizar alterações realizadas
+
+* Para visualizar as alterações realizadas nos arquivos:
+        
+        git diff
+
+* Para visualizar arquivos que foram alterados:
+
+        git diff --name-only
+
+* Para visualizar as alterações realizadas em um arquivo específico:
+
+        git diff NOME_DO_ARQUIVO.extensão
+
+#### Reverter alterações em um arquivo.
+
+* Execute ```git checkout HEAD -- NOME_DO_ARQUIVO.ext``` para reverter todas as alterações desse arquivo. *HEAD indica o branch atual*
+
+
 
 
 
