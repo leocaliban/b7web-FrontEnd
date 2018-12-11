@@ -45,10 +45,6 @@ O comando ```git status``` exibe as modificações realizadas.
 
 * Executar ```git log``` para visualizar todos os commits.
 
-### Visualizar branchs
-
-* Executar ```git branch``` para visualizar todos os branchs.
-
 ### Reverter um commit
 
 * Para reverter o commit e recuperar as alterações para o estado de rastreado:
@@ -62,6 +58,17 @@ O comando ```git status``` exibe as modificações realizadas.
 * Para reverter o commit eliminando todas as alterações do commit:
 
         git reset --hard CÓDIGO_DO_COMMIT
+
+### Criando branchs
+
+* Execute ```git branch NOME_DO_BRANCH``` para criar uma nova branch.
+
+* Mudar de branch ```git checkout NOME_DO_BRANCH```
+
+### Visualizar branchs
+
+* Executar ```git branch``` para visualizar todos os branchs.
+
 
 
 
