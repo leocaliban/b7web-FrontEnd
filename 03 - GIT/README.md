@@ -29,7 +29,7 @@ O comando ```git status``` exibe as modificações realizadas.
 
 ### Rastrear arquivos
 
-* Rastrear individualmente: ```git add NOME_DO_ARQUIVO```
+* Rastrear arquivo específico: ```git add NOME_DO_ARQUIVO```
 
 * Rastrear todos: ```git add .``` ou ```git add -A```
 
@@ -39,8 +39,29 @@ O comando ```git status``` exibe as modificações realizadas.
 
 * Realizar commit
 
-```git commit -m "MENSAGEM DO QUE FOI REALIZADO NO COMMIT"```
+```git commit -m "MENSAGEM_DO_QUE_FOI_REALIZADO_NO_COMMIT"```
 
 ### Visualizar commits
 
 * Executar ```git log``` para visualizar todos os commits.
+
+### Visualizar branchs
+
+* Executar ```git branch``` para visualizar todos os branchs.
+
+### Reverter um commit
+
+* Para reverter o commit e recuperar as alterações para o estado de rastreado:
+
+        git reset --soft CÓDIGO_DO_COMMIT
+
+* Para reverter o commit e recuperar as alterações para o estado de não rastreado:
+
+        git reset --mixed CÓDIGO_DO_COMMIT
+
+* Para reverter o commit eliminando todas as alterações do commit:
+
+        git reset --hard CÓDIGO_DO_COMMIT
+
+
+
