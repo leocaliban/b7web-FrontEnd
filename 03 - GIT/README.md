@@ -87,7 +87,28 @@ O comando ```git status``` exibe as modificações realizadas.
 
 * Execute ```git checkout HEAD -- NOME_DO_ARQUIVO.ext``` para reverter todas as alterações desse arquivo. *HEAD indica o branch atual*
 
+## Repositório remoto
 
+[Gerar chave SSH](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+
+#### Conectar ao remoto
+
+* Criar repositório via linha de comando:
+
+        echo "# NOME_REPOSITORIO" >> README.md
+        git init
+        git add README.md
+        git commit -m "MENSAGEM_COMMIT"
+        git remote add origin 
+        git@github.com:NOME_USUARIO/NOME_REPOSITORIO.git
+        git push -u origin master
+
+
+* Enviar um repositório existente via linha de comando:
+
+        git remote add origin 
+        git@github.com:NOME_USUARIO/NOME_REPOSITORIO.git
+        git push -u origin master
 
 
 
