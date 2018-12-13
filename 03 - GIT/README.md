@@ -132,5 +132,9 @@ Após a realização dos commits locais, execute ```git push origin NOME_BRANCH`
 
 > ver [gitignore.io](https://www.gitignore.io/)
 
+### Atualizar repositório local
 
+* Execute ```git pull origin NOME_DO_BRANCH```
+
+*Utilizar antes de dar um git push*
 
