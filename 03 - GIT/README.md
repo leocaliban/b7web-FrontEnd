@@ -65,15 +65,21 @@ O comando ```git status``` exibe as modificações realizadas.
 
         git revert --no-edit CÓDIGO_DO_COMMIT
 
-### Criando branchs
+### Criando branches
 
 * Execute ```git branch NOME_DO_BRANCH``` para criar uma nova branch.
 
 * Mudar de branch ```git checkout NOME_DO_BRANCH```
 
-### Visualizar branchs
+### Deletando branches remotos e locais
 
-* Executar ```git branch``` para visualizar todos os branchs.
+* Execute ```git push origin :NOME_DO_BRANCH``` para deletar branch remoto.
+
+* Não estando no branch que será excluído, execute ```git branch -D NOME_DO_BRANCH``` para deletar branch local.
+
+### Visualizar branches
+
+* Executar ```git branch``` para visualizar todos os branches.
 
 ### Visualizar alterações realizadas
 
