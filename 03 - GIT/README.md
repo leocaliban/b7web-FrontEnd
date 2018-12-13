@@ -138,3 +138,9 @@ Após a realização dos commits locais, execute ```git push origin NOME_BRANCH`
 
 *Utilizar antes de dar um git push*
 
+### Clonando repositórios
+
+* Execute ```git clone LINK_DO_REPOSITORIO```
+
+
+
