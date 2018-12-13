@@ -110,5 +110,9 @@ O comando ```git status``` exibe as modificações realizadas.
         git@github.com:NOME_USUARIO/NOME_REPOSITORIO.git
         git push -u origin master
 
+#### Enviar commits para o remoto
+
+Após a realização dos commits locais, execute ```git push origin NOME_BRANCH``` para enviá-los ao repositório remoto.
+
 
 
