@@ -45,7 +45,7 @@ O comando ```git status``` exibe as modificações realizadas.
 
 * Executar ```git log``` para visualizar todos os commits.
 
-### Reverter um commit
+### Resetar um commit
 
 * Para reverter o commit e recuperar as alterações para o estado de rastreado:
 
@@ -58,6 +58,12 @@ O comando ```git status``` exibe as modificações realizadas.
 * Para reverter o commit eliminando todas as alterações do commit:
 
         git reset --hard CÓDIGO_DO_COMMIT
+
+### Reverter um commit
+
+* Para reverter um commit para o estado anterior sem perdê-lo:
+
+        git revert --no-edit CÓDIGO_DO_COMMIT
 
 ### Criando branchs
 
