@@ -114,5 +114,11 @@ O comando ```git status``` exibe as modificações realizadas.
 
 Após a realização dos commits locais, execute ```git push origin NOME_BRANCH``` para enviá-los ao repositório remoto.
 
+#### Ignorar arquivos com .gitignore
+
+* Criar um arquivo .gitignore com os nomes dos arquivos que serão ignorados pelo git.
+
+> ver [gitignore.io](https://www.gitignore.io/)
+
 
 
