@@ -10,6 +10,14 @@
 
         git config --global user.email "EMAIL"
 
+* Editor de código. *opcional*
+
+        git config --global core.editor "VARIAVEL_EDITOR"
+
+* Ajuda de auto correção nos comandos
+
+        git config --global help.autocorrect 1
+
 ### Visualizar configurações
 
 * Nome ou E-mail
@@ -41,9 +49,33 @@ O comando ```git status``` exibe as modificações realizadas.
 
 ```git commit -m "MENSAGEM_DO_QUE_FOI_REALIZADO_NO_COMMIT"```
 
+*utilizar o ```git commit -am "MSG"``` para arquivos que já existem (esse passo substitui o ```git add .```)*
+
 ### Visualizar commits
 
 * Executar ```git log``` para visualizar todos os commits.
+
+* Executar ```git log --author="NOME_AUTOR"``` para visualizar os commits de um autor específico.
+
+* Executar ```git log --pretty=oneline``` para visualizar os commits em uma linha.
+
+* Executar ```git shortlog``` para visualizar todos os commits e seus autores resumido.
+
+* Executar ```git shortlog -sn``` para visualizar todos os autores e a sua quantidade de commits.
+
+* Executar ```git log --pretty=oneline --graph``` para visualizar os commits em uma linha com o gráfico.
+
+* Executar ```git log --pretty=oneline --graph``` para visualizar todos commits dos branches em uma linha com o gráfico.
+
+* Executar ```git log --graph``` para visualizar o gráfico dos commits.
+
+#### Mais Filtros nos Commits
+
+* Executar ```git log --since='Jan 1 2018'``` para visualizar os commits desde uma data específica.
+
+* Executar ```git log --until='Jan 1 2018'``` para visualizar os commits até uma data específica.
+
+* Executar ```git log --since='Jan 1 2018' --until='Jan 10 2018'``` para visualizar os commits dentro de um período. *Excluindo o dia que está definido*
 
 ### Resetar um commit
 
@@ -59,15 +91,21 @@ O comando ```git status``` exibe as modificações realizadas.
 
         git reset --hard CÓDIGO_DO_COMMIT
 
+*Recomendado usar em branches*
+
+
 ### Reverter um commit
 
 * Para reverter um commit para o estado anterior sem perdê-lo:
 
         git revert --no-edit CÓDIGO_DO_COMMIT
 
+*Recomendado usar no master*
+
+
 ### Criando branches
 
-* Execute ```git branch NOME_DO_BRANCH``` para criar uma nova branch.
+* Execute ```git branch NOME_DO_BRANCH``` ou ```git -b NOME_DO_BRANCH``` para criar uma nova branch.
 
 * Mudar de branch ```git checkout NOME_DO_BRANCH```
 
@@ -138,9 +176,92 @@ Após a realização dos commits locais, execute ```git push origin NOME_BRANCH`
 
 *Utilizar antes de dar um git push*
 
+### Pegar commit específico em uma branch
+
+* Pegue o código do commit na branch desejada e execute ```git cherry-pick CODIIGO_COMMIT```
+
 ### Clonando repositórios
 
 * Execute ```git clone LINK_DO_REPOSITORIO```
 
+## Criando alias
+
+* Execute ```git config --global alias.NOME_ALIAS NOME_COMANDO``` para criar um alias próprio.
 
 
+## Criando commit por partes
+
+Para enviar um pequeno trecho das modificações realizadas no código, é possível fazer a seleção das linhas para assim criar um commit com essas partes.
+
+* Com o ```git add -p``` você irá decidir o que separar para o commit através das ações disponíveis:
+
+ - y = Sim, adicionar. *mais usado*
+ - n = Não adicionar. *mais usado*
+ - q = Não adicionar e sair do menu.
+ - a = Adicionar essa parte e todas as seguintes.
+ - d = Não adicionar essa parte e nem as seguintes.
+ - j = Passar para a próxima parte.
+ - J = ''
+ - g = Voltar.
+ - s = Dividir essa parte.
+ - e = Faz a seleção manualmente
+
+Após fazer a seleção, realize o commit.
+
+
+## Utilizando Fixup
+
+Para adicionar informações relacionadas a algum commit anterior, utilize o ```fixup``` para indicar que é um ajuste de um commit específico e depois fazer a união para um único commit.
+
+* Ao realizar alterações relacionadas ao commit anterior, faça um commit executando ```git commit --fixup CODIGO_COMMIT_A```. Essa ação criará um novo commit "fixup! NOME_DO_COMMIT_A".
+
+* Para unir um conjunto de fixup em um único commit, execute ```git rebase -i --autosquash CODIGO_COMMIT_ANTERIOR_AO_A```
+*:wq no terminal*
+
+## Unindo commits
+
+Para unir commits execute ```git rebase -i HEAD~2``` (apresenta os dois últimos commits).
+
+
+# Boas Práticas
+
+## Merge ou Rebase:
+
+> Está atualizando sua branch pegando as coisas do master?
+
+Use **REBASE** ```git pull --rebase```
+
+> Terminou sua feature no branch e quer jogar para o master?
+
+Use **MERGE**
+
+## Resolvendo conflitos:
+
+> Ao resolver um conflito utilizar o ```--continue``` para o merge ou rebase.
+
+* Ex: ```merge --continue```
+
+## Empacotar o repositório
+
+```git archive NOME_DA_BRANCH --format=zip --output=master.zip```
+
+## Savior reflog
+
+```git reflog``` exibe o log de todas as ações executadas.
+
+## Awesome GitHub Issues & PRs Templates
+
+> ver [Templates](https://github.com/devspace/awesome-github-templates)
+
+## Palavras chave para fechar issues
+
+> ver [Palavras-chave](https://help.github.com/articles/closing-issues-using-keywords/)
+
+
+# Extensões Git para VSCode
+
+* Git: Add Remote - *sam_schneller*
+
+* Git History - *Don Jayamanne*
+
+* Git Blame - *Wade Anderson*
