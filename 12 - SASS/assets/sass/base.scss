@@ -1,0 +1,20 @@
+$cor-fundo: #eeeeee;
+$cor-fonte: #333;
+$borda-padrao: 2px;
+
+body {
+  background-color: $cor-fundo;
+  color: $cor-fonte;
+}
+
+.quadrado{
+  width: 200px;
+  height: 200px;
+  border: solid $borda-padrao #000;
+}
+
+.retangulo{
+  width: 300px;
+  height: 200px;
+  border: solid $borda-padrao #000;
+}
