@@ -1,0 +1,6 @@
+@mixin girar($graus) {
+  transform: rotate($graus);
+  -webkit-transform: rotate($graus);
+  -moz-transform: rotate($graus);
+  -ms-transform: rotate($graus);
+}
