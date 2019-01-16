@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'mixin';
+
+$cor-fundo-menu: #eeeeee;
+$cor-link:#000000;
+
+nav {
+  background-color: $cor-fundo-menu;
+  height: 100px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    @include girar(30deg);
+
+
+    a {
+        display: block;
+        background-color: #ccc;
+        padding: 10px;
+        text-decoration: none;
+        color: $cor-link;
+    }
+  }
+}
