@@ -1,0 +1,25 @@
+.bola{
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 25px;
+    position: absolute;
+    color: aquamarine;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    background-image: url('a.png');
+}
+
+.barra{
+    height: 10px;
+    background-color: green;
+    display: inline-block;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.esconder{
+    display: none;
+}
