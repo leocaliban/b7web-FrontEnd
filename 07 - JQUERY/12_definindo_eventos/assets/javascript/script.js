@@ -1,5 +1,7 @@
 $(function () {
 
+    // Outra maneira de definir evento de click
+    // $('button').bind('click', function(){})
     $('button').click(function () {
         if ($('h1').hasClass('fundo')) {
             $('h1').removeClass('fundo');
