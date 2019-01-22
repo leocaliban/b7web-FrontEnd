@@ -11,3 +11,9 @@ Instalar o **webpack local**. *Requer cli.*
 Por convenção, criar a pasta *src* e *dist* na raiz do projeto.
 
 *Colocar "private": true em package.json.*
+
+Utilizar webpack com com arquivo de configuração.
+
+    npx webpack --config webpack.config.js
+
+Utilizar script de build com ```npm run build```
