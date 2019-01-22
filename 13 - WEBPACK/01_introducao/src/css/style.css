@@ -1,0 +1,14 @@
+.texto{
+    text-decoration: underline;
+    color: blueviolet;
+    border-top: 2px dotted #cccccc;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: inline-block;
+}
+
+body{
+    background-color: #cccccc;
+}

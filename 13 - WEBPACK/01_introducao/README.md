@@ -17,3 +17,7 @@ Utilizar webpack com com arquivo de configuração.
     npx webpack --config webpack.config.js
 
 Utilizar script de build com ```npm run build```
+
+* CSS:
+
+Instalar loaders ```npm install style-loader css-loader --save-dev```
