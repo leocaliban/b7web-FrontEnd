@@ -21,3 +21,7 @@ Utilizar script de build com ```npm run build```
 * CSS:
 
 Instalar loaders ```npm install style-loader css-loader --save-dev```
+
+* Imagens:
+
+Loader ```npm install file-loader --save-dev```
