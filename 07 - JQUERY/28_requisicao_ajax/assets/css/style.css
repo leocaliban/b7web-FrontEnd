@@ -1,0 +1,31 @@
+.fundo{
+    background-color: cadetblue;
+}
+
+.enviado{
+    color: green;
+    border-bottom: 2px double green;
+}
+
+.div{
+    width: 150px;
+    height: 250px;
+    background-color: rgb(221, 221, 221);
+    
+}
+
+.bordas{
+    border: 2px solid rgb(131, 51, 211);
+    transition: all 0.5s ease-in-out;
+}
+
+.botao{
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+    cursor: pointer;
+}
