@@ -1,0 +1,13 @@
+.hora-selecao{
+  width: 115px;
+  height: 100px;
+  background-color: #999999;
+  color: white;
+  position: absolute;
+  display: none;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
