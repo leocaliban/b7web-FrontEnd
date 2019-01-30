@@ -1,0 +1,9 @@
+.red{
+    color: red;
+    text-decoration: none;
+}
+
+.red:hover{
+    color: black;
+    font-weight: bold;
+}

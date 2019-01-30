@@ -1,0 +1,19 @@
+.fundo{
+    background-color: cadetblue;
+}
+
+.enviado{
+    color: green;
+    border-bottom: 2px double green;
+}
+
+.div{
+    width: 400px;
+    height: 600px;
+    overflow: scroll;
+}
+
+.bordas{
+    border: 2px solid rgb(131, 51, 211);
+    transition: all 0.5s ease-in-out;
+}

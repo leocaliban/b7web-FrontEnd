@@ -1,0 +1,69 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.placar {
+  padding: 10px 0;
+  width: 150px;
+  height: 120px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  background-image: linear-gradient(190deg, rgb(126, 136, 226), rgb(42, 224, 18));
+  text-shadow: 1px 1px 2px #424040;
+}
+
+button {
+  border-radius: 10px;
+  box-shadow: 0 1px 2px #424040;
+  border: 1px solid #424040;
+  cursor: pointer;
+  padding: 8px 5px;
+}
+
+button:hover{
+  box-shadow: 0 2px 3px #000000;
+  background-color: #cacaca;
+}
+
+#placar {
+  font-size: 50px;
+}
+
+.bola {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  background-size: cover;
+  box-shadow: 0 4px 2px #000000;
+}
+
+.bola1 {
+  background-image: url("../images/bola-basquete.png");
+}
+
+.bola2 {
+  background-image: url("../images/bola-praia.png");
+}
+
+.bola3 {
+  background-image: url("../images/bola-tenis.png");
+}
+
+.bola4 {
+  background-image: url("../images/bola.png");
+}
+
+.campo-bolas {
+  position: fixed;
+  left: 150px;
+  top: 0;
+  background-image: linear-gradient( rgb(235, 221, 204), rgb(213, 183, 219));
+  height: 500px;
+  width: 400px;
+}

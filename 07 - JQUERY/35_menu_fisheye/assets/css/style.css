@@ -1,0 +1,52 @@
+.menu{
+  width: 580px;
+  height: 70px;
+  background-image: linear-gradient(90deg, rgb(0, 183, 255), rgb(224, 224, 18));
+
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -290px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.icone{
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.facebook{
+  background-image: url('../images/facebook.png');
+}
+
+.instagram{
+  background-image: url('../images/instagram.png');
+}
+
+.snap{
+  background-image: url('../images/snap.png');
+}
+
+.twitter{
+  background-image: url('../images/twitter.png');
+}
+
+.linkedin{
+  background-image: url('../images/linkedin.png');
+}
+
+.whattsap{
+  background-image: url('../images/whattsap.png');
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
