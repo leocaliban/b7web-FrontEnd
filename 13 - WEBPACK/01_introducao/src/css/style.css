@@ -1,0 +1,41 @@
+.texto{
+    text-decoration: underline;
+    color: blueviolet;
+    border-top: 2px dotted #cccccc;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: inline-block;
+}
+
+body{
+    background-color: #cccccc;
+}
+
+.foto1, .foto2, .foto3{
+    width: 33%;
+    height: 600px;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    float: left;
+}
+
+.foto1{
+    background-image: url('../images/01.jpg');
+}
+
+.foto2{
+    background-image: url('../images/02.jpg');
+}
+
+.foto3{
+    background-image: url('../images/03.jpg');
+}
+
+.container{
+    border: 2px solid #333333;
+    margin: 0 auto;
+}
