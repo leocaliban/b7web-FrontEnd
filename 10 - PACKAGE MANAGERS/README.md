@@ -24,6 +24,10 @@
   7. keywords:
   8. author:
   9. license: (ISC) *default*
-  
+
+* Criar **index.js** em um repositório src.
 ----------
+#### Instalar um pacote
+
+* Executar `npm install NOME_DA_LIB`.
 
