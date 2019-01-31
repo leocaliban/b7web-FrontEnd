@@ -31,9 +31,18 @@
 
 * Executar `npm install NOME_DA_LIB`.
 
+    *Alias para instalação de pacotes* `i`, `add`.
+
 ----------
 #### Atualizar um pacote
 
 * Atualizar todas as dependências do projeto `npm update`.
 * Atualizar uma de dependência específica `npm update NOME_DA_LIB`.
+
+----------
+#### Remover um pacote
+
+* Executar `npm unistall NOME_DA_LIB` 
+
+    *Alias para remover pacotes* `un`, `unlink`, `remove`, `rm`, `r`.
 
