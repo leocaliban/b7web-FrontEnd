@@ -1,8 +1,9 @@
-import moment, { locale } from 'moment';
-// ou >>> const moment = require('moment');
+const moment = require('moment');
 
-locale('pt-br');
+moment.locale('pt-br');
 
 let dia = moment().format('dddd');
+
+document.getElementById('dia').innerHTML = `O dia atual é: ${dia}`;
 
 console.log(`O dia atual é: ${dia}`);
