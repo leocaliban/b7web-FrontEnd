@@ -84,7 +84,7 @@ $(function () {
     atualizarPlacar();
 
     $('.area').bind('click', function (e) {
-        if ($(this).find('img').lenght == undefined) {
+        if ($(this).find('img').lenght == undefined && $(this).attr('data-marcado') == '') {
             if (vez == 'O') {
                 $(this).html('<img src="assets/images/o.png" />');
                 $(this).attr('data-marcado', 'O');
