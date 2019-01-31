@@ -31,3 +31,8 @@
 
 * Executar `npm install NOME_DA_LIB`.
 
+#### Atualizar um pacote
+
+* Atualizar todas as dependências do projeto `npm update`.
+* Atualizar uma de pendência específica `npm update NOME_DA_LIB`.
+
