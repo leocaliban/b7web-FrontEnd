@@ -48,3 +48,33 @@
 
     *Alias para remover pacotes* `un`, `unlink`, `remove`, `rm`, `r`.
 
+----------
+## YARN
+
+### Instalação
+
+* Instalar o [Yarn](https://yarnpkg.com/pt-BR/).
+
+----------
+### Iniciar novo pacote
+
+* Executar `yarn init`.
+* Preencher questionário no terminal 
+  
+  1. question name (02_yarn):
+  2. question version (1.0.0):
+  3. question description:
+  4. question entry point (index.js):
+  5. question repository url:
+  6. question author:
+  7. question license (MIT):
+  8. question private:
+
+----------
+*Operações/comandos de gerenciamento de pacotes são semelhantes ao do npm*
+
+
+
+
+
+
