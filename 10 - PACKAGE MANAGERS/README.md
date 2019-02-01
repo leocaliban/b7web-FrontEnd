@@ -33,6 +33,8 @@
 
     *Alias para instalação de pacotes* `i`, `add`.
 
+* Instalação de versões específicas `npm install NOME_DA_LIB@VERSAO`
+
 ----------
 #### Atualizar um pacote
 
