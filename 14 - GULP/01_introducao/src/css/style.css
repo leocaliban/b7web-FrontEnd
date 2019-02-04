@@ -1,0 +1,18 @@
+body{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-right: 10px;
+    background-color: #883333;
+    width: 100%;
+
+}
+
+/* CSS teste coments 
+ .coisa não repetir
+*/
+
+.coisa{
+    background-repeat: no-repeat;
+    color: red;
+}
