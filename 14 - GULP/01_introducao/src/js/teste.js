@@ -1,1 +1,5 @@
-let teste = true;
+var teste = true;
+
+function teste() {
+    return true;
+}
