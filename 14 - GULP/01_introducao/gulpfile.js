@@ -1,11 +1,12 @@
-const { series, parallel } = require('gulp');
 
-function javascript(cb) {
-    cb();
-}
+const { src, dest } = require('gulp');
 
-function css(cb) {
-    cb();
-}
+const rename = require('gulp-rename');
 
-exports.build = parallel(javascript, css);
+exports.default = () => {
+    return src('src/js/*.js')
+        .pipe(rename({
+            extname: '.min.js'
+        }))
+        .pipe(dest('dist/'));
+};

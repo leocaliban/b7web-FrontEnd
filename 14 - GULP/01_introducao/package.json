@@ -9,6 +9,7 @@
   "author": "Leocaliban",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0"
   }
 }

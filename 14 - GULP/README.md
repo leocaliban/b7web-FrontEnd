@@ -35,6 +35,4 @@ Criar o arquivo "gulpfile.js" na pasta do projeto
   > *para listar todas as tasks `gulp --tasks`.*
 
 
-  
-
 ----------
