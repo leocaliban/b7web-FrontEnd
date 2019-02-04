@@ -1,10 +1,11 @@
-function defaultTask(cb) {
+const { series, parallel } = require('gulp');
+
+function javascript(cb) {
     cb();
 }
 
-function outraTask(cb) {
+function css(cb) {
     cb();
 }
 
-exports.default = defaultTask;
-exports.outraTask = outraTask;
+exports.build = parallel(javascript, css);
