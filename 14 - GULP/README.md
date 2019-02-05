@@ -36,3 +36,19 @@ Criar o arquivo "gulpfile.js" na pasta do projeto
 
 
 ----------
+## Comandos principais
+
+* `task()`
+  * Define tarefas no Gulp;
+* `src()`
+  * Arquivos que entram no fluxo de tarefas para serem tratados ou manipulados;
+* `dest()`
+  * Destino dos arquivos que já passaram pelo fluxo de tarefa;
+* `watch()`
+  * Assiste/Observa os arquivos e faz alguma tarefa quando esses são alterados;
+* `pipe()`
+  * Concatena tarefas no Gulp;
+
+
+
+----------
