@@ -48,6 +48,10 @@ Criar o arquivo "gulpfile.js" na pasta do projeto
   * Assiste/Observa os arquivos e faz alguma tarefa quando esses são alterados;
 * `pipe()`
   * Concatena tarefas no Gulp;
+* `series()`
+  * Executa uma série de tasks por ordem;
+* `parallels()`
+  * Executa tasks em paralelo;
 
 
 
