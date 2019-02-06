@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const htmlMIN = require('gulp-htmlmin');
 const scssMIN = require('gulp-sass');
+const notify = require('gulp-notify');
 
 // sass
 gulp.task('sass', () => {
@@ -8,6 +9,7 @@ gulp.task('sass', () => {
         .pipe(scssMIN({
             outputStyle: 'compressed'
         }))
+        .on('error', notify.onError('Erro: <%= error.message %>'))
         .pipe(gulp.dest('dist/assets/css'));
 });
 
@@ -17,6 +19,7 @@ gulp.task('html', () => {
         .pipe(htmlMIN({
             collapseInlineTagWhitespace: true
         }))
+        .on('error', notify.onError('Erro: <%= error.message %>'))
         .pipe(gulp.dest('dist/'));
 });
 
