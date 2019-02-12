@@ -5,6 +5,9 @@ const rename = require('gulp-rename');
 const uglifyJS = require('gulp-uglify');
 const uglifyCSS = require('gulp-uglifycss');
 const image = require('gulp-image');
+const sass = require('gulp-sass');
+
+sass.compiler = require('node-sass');
 
 
 function javascript() {
@@ -34,4 +37,19 @@ function otimizarImagens() {
         .pipe(dest('dist/assets/images'));
 }
 
-exports.default = parallel(javascript, css, otimizarImagens);
+function converterSass() {
+    return src('src/css/*.scss')
+        .pipe(sass(
+            {
+                outputStyle: 'compressed'
+            }
+        ))
+        .pipe(rename(
+            {
+                extname: '.min.css'
+            }
+        ))
+        .pipe(dest('dist/assets/css'));
+}
+
+exports.default = parallel(javascript, css, converterSass);
