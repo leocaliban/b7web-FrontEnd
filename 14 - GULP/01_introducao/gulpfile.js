@@ -4,6 +4,7 @@ const { src, dest, parallel } = require('gulp');
 const rename = require('gulp-rename');
 const uglifyJS = require('gulp-uglify');
 const uglifyCSS = require('gulp-uglifycss');
+const image = require('gulp-image');
 
 
 function javascript() {
@@ -27,4 +28,10 @@ function css() {
         .pipe(dest('dist/assets/css'));
 }
 
-exports.default = parallel(javascript, css);
+function otimizarImagens() {
+    return src('src/images/*.jpg')
+        .pipe(image())
+        .pipe(dest('dist/assets/images'));
+}
+
+exports.default = parallel(javascript, css, otimizarImagens);
