@@ -7,6 +7,7 @@ const uglifyCSS = require('gulp-uglifycss');
 const image = require('gulp-image');
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
+const cssImport = require('gulp-cssimport');
 
 sass.compiler = require('node-sass');
 
@@ -24,6 +25,7 @@ function javascript() {
 }
 function css() {
     return src('src/css/*.css')
+        .pipe(cssImport())
         .pipe(uglifyCSS({
             'maxLineLen': 80,
             'uglyComments': true
