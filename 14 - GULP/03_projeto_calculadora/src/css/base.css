@@ -1,0 +1,13 @@
+body {
+  background-color: #555555;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.area {
+  width: 350px;
+  border: 1px solid #ffffff;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
