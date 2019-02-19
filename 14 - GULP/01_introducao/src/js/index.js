@@ -1,5 +1,6 @@
-var nome = "jack";
+const teste = 'TESTE ES6';
 
-function teste2() {
-    return true;
-}
+
+let nome = (nome) => {
+    return `Meu nome é ${nome}`;
+};

@@ -6,12 +6,16 @@ const uglifyJS = require('gulp-uglify');
 const uglifyCSS = require('gulp-uglifycss');
 const image = require('gulp-image');
 const sass = require('gulp-sass');
+const babel = require('gulp-babel');
 
 sass.compiler = require('node-sass');
 
 
 function javascript() {
     return src('src/js/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(uglifyJS())
         .pipe(rename({
             extname: '.min.js'
