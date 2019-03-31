@@ -1,3 +1,18 @@
+function urlBase64ToUint8Array(base64String) {
+    const padding = '='.repeat((4 - base64String.length % 4) % 4);
+    const base64 = (base64String + padding)
+        .replace(/\-/g, '+')
+        .replace(/_/g, '/');
+
+    const rawData = window.atob(base64);
+    const outputArray = new Uint8Array(rawData.length);
+
+    for (var i = 0; i < rawData.length; ++i) {
+        outputArray[i] = rawData.charCodeAt(i);
+    }
+    return outputArray;
+}
+
 if ('serviceWorker' in navigator && 'Notification' in window) {
     window.onload = function () {
         navigator.serviceWorker.register('/sw/sw.js')
@@ -7,6 +22,20 @@ if ('serviceWorker' in navigator && 'Notification' in window) {
                 console.log('Ocorreu um erro no registro do ServiceWorker: ');
                 console.log(e);
             });
+
+        navigator.serviceWorker.ready.then((registration) => {
+
+            var appCodeKey = 'BGQSosovSBKZRukETWYBw0caRqrD4qgvdJzZy_YHTtUi8fAXh3gcCo4GuePZSw9wl7YnzkC0w5SGfzXO1IsVI_c';
+            var options = {
+                userVisibleOnly: true,
+                applicationServerKey: urlBase64ToUint8Array(appCodeKey)
+            };
+            registration.pushManager.subscribe(options).then((pushSubscription) => {
+
+            }).catch((error) => {
+                console.log(error.message);
+            });
+        });
 
         Notification.requestPermission((permission) => {
             if (permission == 'granted') {
