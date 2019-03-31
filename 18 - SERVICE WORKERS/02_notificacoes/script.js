@@ -25,6 +25,16 @@ if ('serviceWorker' in navigator && 'Notification' in window) {
 
         navigator.serviceWorker.ready.then((registration) => {
 
+            /**
+                 registration.pushManager.getSubscription().then((subscription) => {
+                     subscription.unsubscribe().then(() => {
+                         console.log('Inscrição removida.');
+                    }).catch(() => {
+                        console.log('Erro ao remover inscrição.');
+                    });
+                });            
+             */
+
             var appCodeKey = 'BGQSosovSBKZRukETWYBw0caRqrD4qgvdJzZy_YHTtUi8fAXh3gcCo4GuePZSw9wl7YnzkC0w5SGfzXO1IsVI_c';
             var options = {
                 userVisibleOnly: true,
