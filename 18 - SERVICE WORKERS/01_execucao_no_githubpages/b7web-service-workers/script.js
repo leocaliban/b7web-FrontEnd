@@ -7,5 +7,11 @@ if ('serviceWorker' in navigator) {
                 console.log('Ocorreu um erro no registro do ServiceWorker: ');
                 console.log(e);
             });
+
+        setTimeout(function () {
+            var img = new Image();
+            img.src = 'gg.png';
+            document.body.appendChild(img);
+        }, 2000);
     };
 }
