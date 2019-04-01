@@ -36,15 +36,31 @@ if ('serviceWorker' in navigator && 'Notification' in window) {
              */
 
             var appCodeKey = 'BGQSosovSBKZRukETWYBw0caRqrD4qgvdJzZy_YHTtUi8fAXh3gcCo4GuePZSw9wl7YnzkC0w5SGfzXO1IsVI_c';
+
             var options = {
                 userVisibleOnly: true,
                 applicationServerKey: urlBase64ToUint8Array(appCodeKey)
             };
-            registration.pushManager.subscribe(options).then((pushSubscription) => {
 
-            }).catch((error) => {
-                console.log(error.message);
-            });
+            registration.pushManager.subscribe(options)
+                .then((pushSubscription) => {
+
+                    console.log(JSON.stringify(pushSubscription));
+
+                    fetch(
+                        'https://site.com.br/notificacao/registro',
+                        {
+                            method: 'POST',
+                            body: JSON.stringify(pushSubscription)
+                        }).then((response) => {
+                            console.log(response);
+                        }).catch((error) => {
+                            console.log(error.message);
+                        });
+
+                }).catch((error) => {
+                    console.log(error.message);
+                });
         });
 
         Notification.requestPermission((permission) => {
