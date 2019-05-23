@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Exercício: Criar tabela complexa</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Dia</th>
+                <th colspan="3">Seminário</th>
+            </tr>
+            <tr>
+                <th colspan="2">Agenda</th>
+                <th rowspan="2">Tópico</th>
+            </tr>
+            <tr>
+                <th>Início</th>
+                <th>Término</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Segunda-feira</td>
+                <td class="yellow-hour" rowspan="2">8:00 a.m.</td>
+                <td class="purple-hour" rowspan="2">5:00 p.m.</td>
+                <td>Introdução à XML</td>
+            </tr>
+            <tr>
+                <td>Validade: DTD e Relax NG</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Terça-feira</td>
+                <td class="yellow-hour">8:00 a.m.</td>
+                <td class="yellow-hour">11:00 a.m.</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td class="yellow-hour" rowspan="2">11:00 a.m.</td>
+                <td class="green-hour" rowspan="2">2:00 p.m.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">XSL Transformações</td>
+            </tr>
+            <tr>
+                <td class="green-hour">2:00 p.m.</td>
+                <td class="purple-hour">5:00 p.m.</td>
+            </tr>
+            <tr>
+                <td>Quarta-feira</td>
+                <td class="yellow-hour">8:00 a.m.</td>
+                <td class="green-hour">12:00 p.m.</td>
+                <td>XSL Formatando Objetos</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
