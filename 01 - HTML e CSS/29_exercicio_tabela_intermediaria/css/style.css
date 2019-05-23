@@ -1,0 +1,18 @@
+table {
+    width: 400px;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 7px 10px 10px 10px;
+}
+
+th {
+    font-size: 20px;
+    border: 1px solid #000000;
+}
+
+td {
+    border: 1px solid #cccccc;
+}
