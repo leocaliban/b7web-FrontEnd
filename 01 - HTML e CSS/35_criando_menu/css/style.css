@@ -1,0 +1,31 @@
+.nav, .menu{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a{
+    color: aliceblue;
+    display: block;
+    padding: 10px;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav a:hover{
+    background-color: white;
+    color: cornflowerblue;
+}
+
+.menu{
+    width: 120px;
+    margin-top: 30px; 
+}
+
+.menu li {
+    list-style: none;
+    display: block;
+}
