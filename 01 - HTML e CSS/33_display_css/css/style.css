@@ -1,0 +1,24 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: slateblue;
+    margin: 5px;
+    text-align: center;
+    color: seashell;
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+.inline{
+    display: inline;
+}
+
+.inline-block{
+    display: inline-block;
+}
