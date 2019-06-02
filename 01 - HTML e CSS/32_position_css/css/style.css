@@ -1,0 +1,24 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: slateblue;
+    margin: 5px;
+    text-align: center;
+    color: seashell;
+}
+
+.absolute{
+    position: absolute;
+    left: 300px;
+    top: 20px;
+}
+
+.fixed{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.relative{
+    position: relative;
+}
